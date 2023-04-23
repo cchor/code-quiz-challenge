@@ -9,19 +9,29 @@
 </head>
 <body>
     <h1>Code Quiz</h1>
-    <p>Time Remaining: </p> 
+    <p><strong>Time Remaining:</strong> </p> 
 <!-- creating the timer countdown and button -->
     <div class="timer-box">
-        <div id= "timer">10</div> 
-    </div> 
+        <div id= "timer">10</div>  
     </div>    
         <button class="button-start">Start Timer</button>
     </div>
+        
+    <div class="questions-box"></div>
+        <div class="questions-header">
+            <h3>Play Game</h3>
+<!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio -->
+        <p>What does HTML do?</p>
+        <ul>
+           <li><input type="radio" id="quest1" value="Nothing" class="answer">
+            <label for="quest1">Answer 1</label></li>
+            <li><input type="radio" id="quest1" value="Nothing" class="answer">
+            <label for="quest1">Answer 2</label></li>           
+            <li><input type="radio" id="quest1" value="Nothing" class="answer">
+            <label for="quest1">Answer 3</label></li>        </ul>
+        </div>
      <div>
-        <p>High Scores</p>
-     </div>  
-     <div>
-        <p>Play Game</p>
+        <h3>High Scores</h3>
      </div> 
    <script src="./script.js"></script>
 </body>
