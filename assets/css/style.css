@@ -1,0 +1,35 @@
+body { 
+    background-color:rgb(199, 213, 246);
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.timer {
+    background: rgb(245, 243, 243);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    display: inline-block;
+    padding: 5px;
+    border: solid blue;
+
+
+}
+
+.start_btn {
+    background: silver;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    display: inline-block;
+
+
+}
+
+p {
+    background-color: pink;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+
+}
