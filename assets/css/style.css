@@ -5,13 +5,18 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
+*{
+    box-sizing: border-box;
+    margin: 0  ;
+    padding: 0;
+}
 
 .timer-box {
     background: rgb(245, 243, 243);
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 25px;
     display: inline-block;
-    padding: 5px;
+    padding: 25px;
     border: solid rgb(194, 190, 190);
 
 }
