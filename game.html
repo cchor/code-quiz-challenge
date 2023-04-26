@@ -5,16 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Play Code Quiz</title>
-    <link rel="stylesheet" href="/game.css"/>
+    <link rel="stylesheet" href="./game.css"/>
     <link rel="stylesheet" href="./assets/css/"/>
 </head>
 <body>
-    <div>
+    <div class="game-container">
+        <div id="game" class="justify-center flex-column">
         <h3>Play Game</h3>
             <p>Answer the questions before the timer runs out!</p>
         <div>
             <p><strong>Question 1</strong></p>
-        <ul>
+        <div class="questions">
+            <ul>
            <li><input type="radio" id="quest1" value="Nothing" class="answer">
             <label for="quest1">Answer 1</label></li>
             <li><input type="radio" id="quest1" value="Nothing" class="answer">
@@ -22,7 +24,9 @@
             <li><input type="radio" id="quest1" value="Nothing" class="answer">
             <label for="quest3">Answer 3</label></li>        
         </ul>
-    </div>
+        </div>
+        </div>
+        </div>
    <script src="./game.js"></script> 
 </body>
 </html>

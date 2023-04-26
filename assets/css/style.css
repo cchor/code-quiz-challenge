@@ -3,6 +3,10 @@
     font-size: 20px;
     color: black;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    --hovercolor: rgb(21, 30, 151);
+    --buttoncolor: rgb(215, 204, 204);
+    --bordercolor: rgb(104, 104, 211);
+
     
 }
 
@@ -21,17 +25,18 @@ h2 {
     color: black;
 }
 
-.timer-box {
+.timer-container {
     background: rgb(245, 243, 243);
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 25px;
-    display: inline-block;
+    display: flex;
+    width: 5%;
     padding: 25px;
     border: solid rgb(194, 190, 190);
 
 }
 
-.container {
+.game-container {
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -39,19 +44,14 @@ h2 {
     align-items: center;
 }
 
-.container > * {
-    width: 100%;
-}
-
-.flex-column {
+.highscore-container {
+    width: 100vw;
+    height: 100vh;
     display: flex;
-    flex-direction: column;
-}
-
-.flex-center {
     justify-content: center;
     align-items: center;
 }
+
 
 .text-center {
     text-align: center;
@@ -67,6 +67,24 @@ h2 {
 
 }
 
+.btn {
+    font-size: 25px;
+    padding: 5px;
+    width: 180px;
+    text-align: center;
+    border: 3px solid var(--bordercolor);
+    margin: 4px;
+    background-color: var(--buttoncolor);
+
+}
+
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0 2px 8px 8px var(--hovercolor);
+
+    
+}
+
 p {
    
     display: inline-flex;
@@ -76,25 +94,8 @@ p {
 
 }
 
-.questions-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin:0;
-}
 
-.btn {
-    font-size: 20px;
-    width: 80px;
-    text-align: center;
-    border: 1px solid green;
-    margin: 4px;
-    background-color: rgb(187, 175, 175);
 
-}
 
-.btn:hover {
-cursor: pointer;
-box-shadow: 0 2px 4px 4px rgb(69, 250, 96);
 
-}
+
