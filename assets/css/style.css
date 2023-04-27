@@ -6,7 +6,6 @@
     --hovercolor: rgb(21, 30, 151);
     --buttoncolor: rgb(215, 204, 204);
     --bordercolor: rgb(104, 104, 211);
-
     
 }
 
@@ -16,13 +15,26 @@
     padding: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
     
-    
 }
 
 h1,
 h2 {
     margin-bottom: 5px;
     color: black;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.start-container {
+    display: block;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .timer-container {
@@ -39,7 +51,7 @@ h2 {
 .game-container {
     width: 100vw;
     height: 100vh;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
 }
@@ -64,7 +76,6 @@ h2 {
     padding: 5px;
     display: inline-block;
     
-
 }
 
 .btn {
@@ -81,18 +92,17 @@ h2 {
 .btn:hover {
     cursor: pointer;
     box-shadow: 0 2px 8px 8px var(--hovercolor);
-
-    
+ 
 }
 
-p {
+/* p {
    
     display: inline-flex;
     align-items: center;
     justify-content: center;
     padding: 30px;
 
-}
+} */
 
 
 
