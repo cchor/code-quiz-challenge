@@ -54,7 +54,7 @@ function timerCountDown() {
 }
 
 function renderQuestion() {
-    document.getElementById("question").textContent = questionArray[questionIndex].question
+    document.getElementById("question").textContent = questionArray[questionIndex].question;
 }
 function startGame() {
     startContainer.style.display="none";
