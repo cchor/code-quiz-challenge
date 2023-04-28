@@ -98,18 +98,10 @@ nav {
 
 .btn:hover {
     cursor: pointer;
-    box-shadow: 0 2px 8px 8px var(--hovercolor);
+    box-shadow: 0 2px 6px 6px var(--hovercolor);
  
 }
 
-/* p {
-   
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 30px;
-
-} */
 
 .answer-button{
 background-color: #8d88da;

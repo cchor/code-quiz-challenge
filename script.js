@@ -6,11 +6,6 @@ var startContainer=document.querySelector(".start-container");
 var questionIndex = 0;
 
 var questionArray = [
-    // {
-    //     question: "What are variables used for?",
-    //     answers: ["Placeholders for information", "To call a function","They are operators","All of the above"]
-    //     correctAnswer: "Placeholders for information"
-    // },
 
     {
         question: "What are variables used for?",
@@ -50,16 +45,6 @@ const question = document.getElementById("question");
 const answers = Array.from(document.getElementsByClassName("answer-button"));
 console.log(answers);
 
-let currentQuestion = {};
-let acceptingAnswers = true;
-let score = 0;
-let questionCounter = 0;
-let availableQuestions = [];
-
-let questions = []
-
-const correct_bonus = 10;
-const max_questions = 4;
 
 
 // countdown timer
@@ -80,6 +65,9 @@ function renderQuestion() {
     document.getElementById("answer2").textContent = questionArray[questionIndex].answer2;
     document.getElementById("answer3").textContent = questionArray[questionIndex].answer3;
     document.getElementById("answer4").textContent = questionArray[questionIndex].answer4;
+    for (let i = 0; i < answer; i++) {
+        
+    }
 }
 
 
@@ -87,6 +75,8 @@ function renderQuestion() {
 function startGame() {
     startContainer.style.display="none";
     gameContainer.style.display="flex";
+    questionCounter = 0;
+    score = 0;
     timerCountDown();
     renderQuestion();
 }
