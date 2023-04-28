@@ -12,28 +12,26 @@
 <!-- timer countdown -->
     <nav>
         <h2>Code Quiz</h2>
-    <p>Time Remaining:<span id="timer"></span></p> 
+    <p>Time Remaining:  <span id="timer"></span></p> 
 
 <!-- timer instuctions and start button -->
 
     </nav>
      <div class="start-container">  
-        <p>Answer the following questions and see if you can beat the timer! Record your score when you are done.</p> 
+        <p>Answer the following questions in 30 seconds! Record your score when you are done.</p> 
         <button class="btn" id="start-btn">Start Timer</button>
 
     </div>
     <div class="game-container">
-    
-   
     <!-- questions section -->
     
         <div>
             <h2>Answer these questions to play!</h2>
             <h3 id="question"></h3>
     
-    <!-- use buttons, not a ul -->
-                <button class="answer-button" type=button id="answer1">answer1</button>
-                <button class="answer-button" type=button id="answer2">answer2</button>
+    <!-- answer buttons -->
+                <button class="answer-button" type=button id="answer1"></button>
+                <button class="answer-button" type=button id="answer2"></button>
                 <button class="answer-button" type=button id="answer3"></button>
                 <button class="answer-button" type=button id="answer4"></button>
         </div>
@@ -42,7 +40,16 @@
     <!-- high scores -->
     <div class="highscore-container">
        <h2>High Scores</h2>
-    </div> 
+    </div>
+    <div class="highscore-list">
+        <h4>Name:</h4>
+        <h4>Score:</h4>
+
+
+
+    </div>
+       
+    
     
 
    <script src="./script.js"></script>

@@ -6,13 +6,19 @@ var startContainer=document.querySelector(".start-container");
 var questionIndex = 0;
 
 var questionArray = [
+    // {
+    //     question: "What are variables used for?",
+    //     answers: ["Placeholders for information", "To call a function","They are operators","All of the above"]
+    //     correctAnswer: "Placeholders for information"
+    // },
+
     {
         question: "What are variables used for?",
         answer1: "Placeholders for information",
         answer2: "To call a function",
         answer3: "They are operators",
         answer4: "All of the above",
-        correctAnswer: "Placeholders for information"
+        correctAnswer: "Placeholders for information",
     },
     {
         question: "What do loops do?",
@@ -40,8 +46,23 @@ var questionArray = [
     }
 ]
 
+const question = document.getElementById("question");
+const answers = Array.from(document.getElementsByClassName("answer-button"));
+console.log(answers);
 
-// learned from https://www.youtube.com/watch?v=4piMZDO5IOI
+let currentQuestion = {};
+let acceptingAnswers = true;
+let score = 0;
+let questionCounter = 0;
+let availableQuestions = [];
+
+let questions = []
+
+const correct_bonus = 10;
+const max_questions = 4;
+
+
+// countdown timer
 function timerCountDown() {
     elem.innerHTML = sec;
    var timer = setInterval (()=>{
@@ -55,7 +76,14 @@ function timerCountDown() {
 
 function renderQuestion() {
     document.getElementById("question").textContent = questionArray[questionIndex].question;
+    document.getElementById("answer1").textContent = questionArray[questionIndex].answer1;
+    document.getElementById("answer2").textContent = questionArray[questionIndex].answer2;
+    document.getElementById("answer3").textContent = questionArray[questionIndex].answer3;
+    document.getElementById("answer4").textContent = questionArray[questionIndex].answer4;
 }
+
+
+
 function startGame() {
     startContainer.style.display="none";
     gameContainer.style.display="flex";
