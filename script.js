@@ -6,6 +6,11 @@ var startContainer=document.querySelector(".start-container");
 var questionIndex = 0;
 
 var questionArray = [
+    // {
+    //     question: "What are variables used for?",
+    //     answers: ["Placeholders for information", "To call a function","They are operators","All of the above"]
+    //     correctAnswer: "Placeholders for information"
+    // },
 
     {
         question: "What are variables used for?",
