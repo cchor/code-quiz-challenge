@@ -28,24 +28,26 @@ var questionArray = [
     }
 
 ]
+console.log(questionArray);
 
 function getQuestion() {
-    var questionArray = question[questionIndex];
-    var question = document.getElementById('question');
-    questionEl.textContent = questionArray.title;
-    correctAnsEl.innerHTML = '';
+    var currentQuestion = questionArray[questionIndex];
+    var questionEl = document.getElementById('question');
+    var choicesEl = document.getElementsByClassName('answer-button');
+    choicesEl.textContent = currentQuestion.title;
+    choicesEl.innerHTML = '';
 
-    for (var i = 0; i < questionArray.options.length; i++) {
+    for (var i = 0; i < currentQuestion.choices.length; i++) {
     var correctAns = questionIndex.options[0];
     var choiceNode = document.createElement('button');
-    choiceNode.setAttribute('answer-button', 'questAns');
-    choiceNode.setAttribute('value', options);
-    choiceNode.textContent = i + 1 +'.' + options;
+    choiceNode.setAttribute('answer-button', 'answer');
+    choiceNode.setAttribute('value', choicesEl);
+    choiceNode.textContent = i + 1 +'.' + choicesEl;
     answerEl.appendChild(choiceNode);
 
     }
 }
-    console.log(questionArray);
+    // console.log(currentQuestion);
 
 
 function startGame() {
@@ -54,7 +56,7 @@ function startGame() {
     questionCounter = 0;
     score = 0;
     timerCountDown();
-    renderQuestion();
+    getQuestion();
 }
 
 startBtn.addEventListener("click",startGame);
